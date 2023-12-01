@@ -1,4 +1,4 @@
-require_relative './input.rb'
+require_relative '../input_parser.rb'
 
 class Trebuchet
   NUMBERS = {
@@ -56,7 +56,7 @@ class Trebuchet
   end
 end
 
-treabuchet = Trebuchet.new(Input::INPUT)
-puts 'PART 1 --> ' + "#{treabuchet.part1}"
-puts 'PART 2 --> ' + "#{treabuchet.part2}"
+trebuchet = Trebuchet.new(InputParser.input_to_array("#{__dir__}/input.txt"))
+puts 'PART 1 --> ' + "#{trebuchet.part1}"
+puts 'PART 2 --> ' + "#{trebuchet.part2}"
 
