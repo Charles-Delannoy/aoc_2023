@@ -1,4 +1,4 @@
-require_relative '../input_parser.rb'
+require_relative '../input_parser.rb' # custom parsing method for the input
 
 class Trebuchet
   NUMBERS = {
